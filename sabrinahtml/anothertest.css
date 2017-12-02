@@ -22,5 +22,7 @@
 
 .secondbox{
     border: 1px solid #fff;
+    width: 400px;
     background-color: white;
+    justify-content:center;
 }
