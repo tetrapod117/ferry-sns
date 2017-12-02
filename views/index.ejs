@@ -1,11 +1,43 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/stylesheets/anothertest.css">
+        <title>website title</title>
+    </head>
+    <body>
+        <header>
+            <h1> <img src="/images/tehu.jpg" class="usericon"  onClick"(次の繊維のページのURLを入力する..">
+                <img src="/images/write1.svg" class="writeicon"  onClick"(次の繊維のページのURLを入力する..">
+            </h1>
+
+            <h2>
+            <img src="/images/timeline.svg" class="timeicon" width="40" height="50" onClick"..">
+            <img src="/images/image_upload.svg" class="imageicon" width="40" height="50" onClick"..">
+            </h2>
+            </div>
+        </header>
+
+        <% list.forEach(function(item) { %>
+              <div class="main">
+                  <div class="imagebox">
+                       <img src="<%= item.user_icon %>" class="friendicon">
+                          </div>
+                  <div class = "secondbox">
+                      <span class="name"><%= item.user_name %></span> <span class="time"><%= item.update_at %></span>
+                      <p>
+                      <span class="message"><%= item.post_text %></span>
+                      </p>
+                  </div>
+                  <div class = "thirdbox">
+                      <img src="/images/reply.svg" width="40" height="50" onClick"..">
+                  </div>
+              </div>
+          <% }); %>
+
+     <footer>
+         <img src="/images/fotter.png" class="footerimage" ">
+     </footer>
+    </body>
 </html>
