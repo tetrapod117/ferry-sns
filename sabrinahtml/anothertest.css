@@ -1,11 +1,5 @@
-.main{
-    padding: 15px 0;
-    background-color: white;
-    display: flex;
-}
-
 header{
-    background: #FF5733 ;
+    background: #f86a4d ;
     border-bottom: double 3px #aba;
     border-left: solid 1px #9a9;
     border-right: solid 1px #565;
@@ -13,6 +7,31 @@ header{
     width: 100%;
 }
 
+.usericon{
+    border-radius:25px;
+    background-color: white;
+    padding: 20px;
+    width: 30px;
+    height: 20px;
+}
+
+.writeicon{
+    border-radius:25px;
+    padding: 20px;
+    width: 50px;
+    height: 40px;
+    float: right;
+}
+
+h2{
+    text-align:center;
+}
+
+.main{
+    padding: 15px 0;
+    background-color: white;
+    display: flex;
+}
 
 .imagebox{
     width: 100px;
@@ -41,11 +60,16 @@ header{
 .thirdbox {
     border: none;
 }
+/**/
+/*footer{*/
+/*    opacity:1;*/
+/*    background-color: rgba(0,0,0,0.6);*/
+/*}*/
 
-footer{
-    background-image: url("/fotter.png");
+.footerimage{
+    opacity:0.7;
+    filter:Aplha(opacity:60);
 }
-
 /**/
 /*.ImageBorder{*/
 /*    border-style: solid;*/
