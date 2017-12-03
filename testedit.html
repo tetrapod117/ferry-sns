@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="anothertest.css">
+        <title>website title</title>
+
+        <script type="text/javascript" src="jquery-3.2.1.slim.min.js"></script>
+    		<script type="text/javascript">
+
+    		$(function() {
+    			var topBtn = $('#page-top');
+    			topBtn.hide();
+    			$(window).scroll(function () {
+    				if ($(this).scrollTop() > 100) {
+    					topBtn.fadeIn();
+    				} else {
+    					topBtn.fadeOut();
+    				}
+    			});
+    			//スクロールしてトップ
+    		    topBtn.click(function () {
+    				$('body,html').animate({
+    					scrollTop: 0
+    				}, 500);
+    				return false;
+    		    });
+    		});
+    		</script>
+        <style media="screen">
+          .header_2{
+            background-color: #f86a4d;
+          }
+          .header_3{
+            background-color: rgba(255, 0, 0, 0.4);
+
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+          <div class="header">
+    				<img class="icon" src="icon.jpg" alt="アイコン"><img class="write" src="Share_1/write.svg" alt="書き込む">
+    			</div>
+    			<a href="#"><div class="header_2"><img src="Share_1/timeline.svg" alt="" class="timeline"></a></div>
+    			<a href="#"><div class="header_3"><img src="Share_1/images.svg" alt="" class="image"></a></div>
+        </header>
+
+
+      <div class="img_tweet">
+
+        <!-- tweet固まり -->
+        <div class="main">
+          <div class="imagebox">
+             <img src="cat.jpeg" class="friendicon">
+          </div>
+
+          <div class = "secondbox">
+              <span class="name">田中</span>
+               <p>
+              <span class="message">情に啅されば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟ったとき、詩が生きて、画が出来る。</span>
+               </p>
+               <a href="#"><img id="twilio" src="twilio.svg" alt="とぅいりお"></a>
+          </div>
+
+          <div class = "thirdbox">
+              <span class="timestamp">1時間前</span>
+                 <p>
+             <img src="reply.svg" class="replybutton"  onClick"(次の繊維のページのURLを入力する..">
+                 </p>
+          </div>
+
+        </div>　<!-- main終了 -->
+        <!-- tw -->
+        <div class="line"></div> <!-- 下線　-->
+
+
+
+      </div> <!--　header の関係で結んだやつ　-->
+
+        <footer><img src="Share_1/fotter.png" class="footer" id="page-top" href="#wrap" alt=""></footer>
+
+    </body>
+</html>
