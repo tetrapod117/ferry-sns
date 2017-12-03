@@ -1,0 +1,68 @@
+.usericon{
+    border-radius:25px;
+    background-color: white;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.friendicon{
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+}
+
+.message{
+    /*white-space: initial;*/
+    word-wrap: break-word;
+    color: #6B6B6B;
+}
+
+.line{
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.main{
+    padding-top: 15px;
+    display: flex;
+    flex: 1;
+    color: #6B6B6B;
+    font-size: 14px;
+}
+
+.imagebox{
+    width:20%;
+    /*height: 100px;*/
+    /*padding: 14px;*/
+/*    margin: 10 px 20 px 10px 20px;*/
+  padding-left: 10px;
+}
+
+.replybutton{
+    width:23px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.timestamp{
+    /*position:relative;
+    left:40px;*/
+    color: #6B6B6B;
+}
+
+.secondbox{
+    border: 1px solid #fff;
+    width: 60%;
+  }
+
+.thirdbox {
+    width:20%;
+}
+
+#twilio{
+    width: 100%;
+    height: auto;
+}
